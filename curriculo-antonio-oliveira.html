@@ -52,7 +52,6 @@
   .sec-title::after{content:"";flex:1;height:1px;background:var(--line);}
 
   .trajetoria{font-size:14px;line-height:1.65;color:#1e2a2e;}
-  .trajetoria strong{color:var(--accent-dark);}
   .trajetoria p{margin-bottom:12px;}
 
   .entry{margin-bottom:18px;}
@@ -73,20 +72,27 @@
   .chip.solid{background:var(--accent);color:#fff;}
   .chip.outline{background:transparent;color:var(--accent-dark);border:1px solid #c4d6d2;}
 
-  .skill-item{margin-bottom:14px;}
-  .skill-title{font-weight:600;font-size:13px;display:flex;align-items:center;gap:8px;margin-bottom:4px;}
-  .skill-title svg{width:14px;height:14px;color:var(--accent);}
-  .skill-desc{font-size:12px;color:var(--muted);line-height:1.4;margin-left:22px;}
+  /* competências aplicadas (estilo clean) */
+  .comp-item{margin-bottom:14px;}
+  .comp-title{font-weight:600;font-size:13px;display:flex;align-items:center;gap:8px;margin-bottom:4px;}
+  .comp-title svg{width:14px;height:14px;color:var(--accent);}
+  .comp-desc{font-size:12px;color:var(--muted);line-height:1.4;margin-left:22px;}
 
-  /* idiomas - apenas inglês com espaçamento melhor */
+  /* idiomas */
   .lang{margin-bottom:20px;}
   .lang:last-child{margin-bottom:0;}
-  .lang-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;}
-  .lang-name{font-size:13.5px;font-weight:600;}
-  .lang-lvl{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--muted);letter-spacing:.5px;}
-  .dots{display:flex;gap:5px;margin-top:6px;}
-  .dot{width:8px;height:8px;border-radius:50%;background:#cdd9d6;}
-  .dot.on{background:var(--accent);}
+  .lang-name{font-size:13.5px;font-weight:600;margin-bottom:6px;}
+  .lang-detail{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--accent-dark);background:var(--accent-tint);display:inline-block;padding:2px 8px;border-radius:3px;}
+
+  /* projetos */
+  .projeto{margin-bottom:20px;}
+  .projeto-titulo{font-weight:700;font-size:14px;color:var(--accent-dark);margin-bottom:5px;}
+  .projeto-desc{font-size:13px;color:var(--muted);margin-left:12px;list-style:none;}
+  .projeto-desc li{margin-bottom:4px;display:flex;gap:8px;}
+  .projeto-desc li::before{content:"→";color:var(--accent);}
+
+  .interesses{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;}
+  .interesse{background:var(--accent-tint);padding:5px 12px;border-radius:20px;font-size:12px;color:var(--accent-dark);font-weight:500;}
 
   @media print{
     @page{size:A4;margin:0;}
@@ -111,13 +117,13 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
         antoniooliveira1101@outlook.com
       </a>
-      <a href="https://linkedin.com/in/seu-perfil">
+      <a href="https://linkedin.com/in/antonio-oliveira" target="_blank">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
         linkedin.com/in/antonio-oliveira
       </a>
-      <a href="https://github.com/Antonio-De-Oliveira11">
+      <a href="https://github.com/Antonio-De-Oliveira11" target="_blank">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
-        Antonio-De-Oliveira11
+        github.com/Antonio-De-Oliveira11
       </a>
     </div>
   </header>
@@ -128,7 +134,7 @@
       <section class="sec">
         <h2 class="sec-title">Tecnologias</h2>
         <div class="grp">
-          <p class="grp-label">Domínio prático (intermediário)</p>
+          <p class="grp-label">Domínio prático</p>
           <div class="chips">
             <span class="chip solid">HTML5</span>
             <span class="chip solid">CSS3</span>
@@ -138,11 +144,11 @@
             <span class="chip solid">IA Generativa</span>
           </div>
           <div style="font-size:10.5px;color:var(--faint);margin-top:7px;font-family:'IBM Plex Mono',monospace;">
-            Uso produtivo de ChatGPT · DeepSeek · Gemini
+            ChatGPT · DeepSeek · Gemini
           </div>
         </div>
         <div class="grp">
-          <p class="grp-label">Em evolução (básico / estudando)</p>
+          <p class="grp-label">Em evolução</p>
           <div class="chips">
             <span class="chip outline">Python</span>
             <span class="chip outline">Java</span>
@@ -156,38 +162,21 @@
 
       <section class="sec">
         <h2 class="sec-title">Idiomas</h2>
-        <!-- apenas inglês -->
         <div class="lang">
-          <div class="lang-top">
-            <span class="lang-name">Inglês</span>
-            <span class="lang-lvl">INTERMEDIÁRIO</span>
-          </div>
-          <div class="dots">
-            <span class="dot on"></span>
-            <span class="dot on"></span>
-            <span class="dot on"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-          <div style="font-size:11px; color:var(--faint); margin-top:6px; font-family:'IBM Plex Mono',monospace;">
-            Leitura técnica avançada · comunicação prática
-          </div>
+          <div class="lang-name">Inglês</div>
+          <div class="lang-detail">Leitura Técnica e Documentação</div>
+          <div style="font-size:11px; color:var(--faint); margin-top:8px;">Compreensão de documentação oficial, artigos técnicos e comunicação básica.</div>
         </div>
       </section>
 
       <section class="sec">
-        <h2 class="sec-title">Como entrego valor</h2>
-        <div class="skill-item">
-          <div class="skill-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Resolução de problemas</div>
-          <div class="skill-desc">Analiso desafios com lógica e pensamento crítico para propor soluções eficientes, não paliativas.</div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Aprendizado acelerado</div>
-          <div class="skill-desc">Consumo documentação, faço cursos e aplico novos conhecimentos em dias, não semanas.</div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Comunicação técnica</div>
-          <div class="skill-desc">Trabalho bem em equipe, sei pedir e oferecer ajuda, e documentar o que faço.</div>
+        <h2 class="sec-title">Interesses de Atuação</h2>
+        <div class="interesses">
+          <span class="interesse">Desenvolvimento Front‑End</span>
+          <span class="interesse">Desenvolvimento Web</span>
+          <span class="interesse">Inteligência Artificial Aplicada</span>
+          <span class="interesse">Automação de Processos</span>
+          <span class="interesse">Desenvolvimento de Produtos Digitais</span>
         </div>
       </section>
     </aside>
@@ -196,9 +185,8 @@
       <section class="sec">
         <h2 class="sec-title">Trajetória</h2>
         <div class="trajetoria">
-          <p>Estudante de <strong>Sistemas de Informação na USP</strong>, com desenvolvimento de software como eixo central da minha formação. Desde o técnico em Desenvolvimento de Sistemas na ETEC, venho criando projetos que vão desde <strong>jogos e sites</strong> até <strong>soluções completas e marketplaces</strong> – utilizando HTML, CSS, JavaScript, WordPress, Node e React.</p>
-          <p>Gosto de transformar ideias em código funcional e de aprender fazendo. Já desenvolvi protótipos de marketplaces, pequenos jogos com lógica em JS e sistemas para automatizar tarefas repetitivas. Minha abordagem é prática: entendo o problema, testo hipóteses rapidamente e entrego valor de forma incremental.</p>
-          <p>Não me limito a uma única tecnologia – busco sempre o melhor caminho para resolver o problema, combinando boas práticas de front-end, uso estratégico de IA e uma pitada de criatividade.</p>
+          <p>Desenvolvedor em formação pela USP, com base técnica em Desenvolvimento de Sistemas e experiência prática na criação de aplicações web, marketplaces e automação de tarefas.</p>
+          <p>Tenho experiência na construção de marketplaces, sistemas web e projetos de lógica aplicada, sempre buscando transformar necessidades reais em soluções funcionais, intuitivas e escaláveis.</p>
         </div>
       </section>
 
@@ -217,12 +205,56 @@
       </section>
 
       <section class="sec">
-        <h2 class="sec-title">Diferenciais práticos</h2>
-        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px;">
-          <span style="background:var(--accent-tint); padding:4px 12px; border-radius:20px; font-size:12px;">🛒 Desenvolvimento de marketplaces (HTML, CSS, JS, WordPress, Node)</span>
-          <span style="background:var(--accent-tint); padding:4px 12px; border-radius:20px; font-size:12px;">📝 Criação de prompts e automação com IA</span>
-          <span style="background:var(--accent-tint); padding:4px 12px; border-radius:20px; font-size:12px;">🧩 Lógica de programação aplicada</span>
-          <span style="background:var(--accent-tint); padding:4px 12px; border-radius:20px; font-size:12px;">📄 Versionamento Git (básico + fluxo)</span>
+        <h2 class="sec-title">Competências Aplicadas</h2>
+        <div class="comp-item">
+          <div class="comp-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Desenvolvimento orientado à solução</div>
+        </div>
+        <div class="comp-item">
+          <div class="comp-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Aprendizado e adaptação tecnológica</div>
+        </div>
+        <div class="comp-item">
+          <div class="comp-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Automação e otimização de processos</div>
+        </div>
+        <div class="comp-item">
+          <div class="comp-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Visão de produto e negócio</div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <h2 class="sec-title">Projetos em Destaque</h2>
+        
+        <div class="projeto">
+          <div class="projeto-titulo">🛒 Marketplace de Recicláveis</div>
+          <ul class="projeto-desc">
+            <li>Plataforma para compra e venda de materiais recicláveis (projeto de conclusão de curso).</li>
+            <li>Front-end com HTML, CSS, JavaScript e React; integração com APIs de localização e pagamento.</li>
+            <li>Estruturação de catálogo, cadastro de usuários e fluxo de negociação.</li>
+          </ul>
+        </div>
+
+        <div class="projeto">
+          <div class="projeto-titulo">🤖 Automações com IA</div>
+          <ul class="projeto-desc">
+            <li>Criação de prompts estruturados e fluxos de automação usando ChatGPT, Gemini e DeepSeek.</li>
+            <li>Uso de IA para geração de conteúdo, revisão de código e otimização de tarefas repetitivas.</li>
+          </ul>
+        </div>
+
+        <div class="projeto">
+          <div class="projeto-titulo">🧠 Sistemas e Lógica Aplicada</div>
+          <ul class="projeto-desc">
+            <li>Desenvolvimento de jogos e pequenos sistemas para praticar algoritmos e estrutura de dados.</li>
+            <li>Projetos acadêmicos com foco em resolução de problemas e pensamento computacional.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="sec">
+        <h2 class="sec-title">Portfólio & GitHub</h2>
+        <div class="trajetoria" style="font-size:13px;">
+          <p>Todo o código dos projetos mencionados (e outros experimentos) está disponível no meu GitHub: <br>
+          <strong><a href="https://github.com/Antonio-De-Oliveira11" target="_blank" style="color:var(--accent);">github.com/Antonio-De-Oliveira11</a></strong></p>
+          <p>Repositórios organizados por área: desenvolvimento web, automação, jogos e estudos de programação.</p>
         </div>
       </section>
     </main>
