@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Currículo — Antônio de Oliveira | Desenvolvedor Front-end & IA</title>
+<title>Currículo — Antônio de Oliveira | Desenvolvedor Full-stack & IA</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -53,6 +53,9 @@
 
   .trajetoria{font-size:14px;line-height:1.65;color:#1e2a2e;}
   .trajetoria p{margin-bottom:12px;}
+  .trajetoria strong{color:var(--accent-dark);}
+  .trajetoria ul{margin:8px 0 12px 20px;}
+  .trajetoria li{margin-bottom:6px;}
 
   .entry{margin-bottom:18px;}
   .entry:last-child{margin-bottom:0;}
@@ -72,19 +75,15 @@
   .chip.solid{background:var(--accent);color:#fff;}
   .chip.outline{background:transparent;color:var(--accent-dark);border:1px solid #c4d6d2;}
 
-  /* competências aplicadas (estilo clean) */
   .comp-item{margin-bottom:14px;}
   .comp-title{font-weight:600;font-size:13px;display:flex;align-items:center;gap:8px;margin-bottom:4px;}
   .comp-title svg{width:14px;height:14px;color:var(--accent);}
-  .comp-desc{font-size:12px;color:var(--muted);line-height:1.4;margin-left:22px;}
 
-  /* idiomas */
   .lang{margin-bottom:20px;}
   .lang:last-child{margin-bottom:0;}
   .lang-name{font-size:13.5px;font-weight:600;margin-bottom:6px;}
   .lang-detail{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--accent-dark);background:var(--accent-tint);display:inline-block;padding:2px 8px;border-radius:3px;}
 
-  /* projetos */
   .projeto{margin-bottom:20px;}
   .projeto-titulo{font-weight:700;font-size:14px;color:var(--accent-dark);margin-bottom:5px;}
   .projeto-desc{font-size:13px;color:var(--muted);margin-left:12px;list-style:none;}
@@ -107,7 +106,7 @@
 
   <header class="header">
     <h1 class="name">Antônio <span class="last">de Oliveira</span></h1>
-    <div class="role">Desenvolvedor Front‑end & IA Aplicada</div>
+    <div class="role">Desenvolvedor Full-stack & IA</div>
     <div class="contact">
       <span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -117,13 +116,13 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
         antoniooliveira1101@outlook.com
       </a>
-      <a href="https://linkedin.com/in/antonio-oliveira" target="_blank">
+      <a href="https://www.linkedin.com/in/antonio-de-oliveira/" target="_blank">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-        linkedin.com/in/antonio-oliveira
+        antonio-de-oliveira
       </a>
       <a href="https://github.com/Antonio-De-Oliveira11" target="_blank">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
-        github.com/Antonio-De-Oliveira11
+        Antonio-De-Oliveira11
       </a>
     </div>
   </header>
@@ -140,22 +139,23 @@
             <span class="chip solid">CSS3</span>
             <span class="chip solid">JavaScript (ES6+)</span>
             <span class="chip solid">React</span>
+            <span class="chip solid">Node.js</span>
+            <span class="chip solid">Bootstrap</span>
             <span class="chip solid">WordPress</span>
-            <span class="chip solid">IA Generativa</span>
-          </div>
-          <div style="font-size:10.5px;color:var(--faint);margin-top:7px;font-family:'IBM Plex Mono',monospace;">
-            ChatGPT · DeepSeek · Gemini
+            <span class="chip solid">Git</span>
           </div>
         </div>
         <div class="grp">
           <p class="grp-label">Em evolução</p>
           <div class="chips">
             <span class="chip outline">Python</span>
-            <span class="chip outline">Java</span>
-            <span class="chip outline">Node.js</span>
+            <span class="chip outline">Java (Spring Boot)</span>
             <span class="chip outline">SQL</span>
             <span class="chip outline">C</span>
-            <span class="chip outline">Git</span>
+            <span class="chip outline">IA Generativa</span>
+          </div>
+          <div style="font-size:10.5px;color:var(--faint);margin-top:7px;font-family:'IBM Plex Mono',monospace;">
+            ChatGPT · DeepSeek · Gemini
           </div>
         </div>
       </section>
@@ -166,41 +166,6 @@
           <div class="lang-name">Inglês</div>
           <div class="lang-detail">Leitura Técnica e Documentação</div>
           <div style="font-size:11px; color:var(--faint); margin-top:8px;">Compreensão de documentação oficial, artigos técnicos e comunicação básica.</div>
-        </div>
-      </section>
-
-      <section class="sec">
-        <h2 class="sec-title">Interesses de Atuação</h2>
-        <div class="interesses">
-          <span class="interesse">Desenvolvimento Front‑End</span>
-          <span class="interesse">Desenvolvimento Web</span>
-          <span class="interesse">Inteligência Artificial Aplicada</span>
-          <span class="interesse">Automação de Processos</span>
-          <span class="interesse">Desenvolvimento de Produtos Digitais</span>
-        </div>
-      </section>
-    </aside>
-
-    <main class="main">
-      <section class="sec">
-        <h2 class="sec-title">Trajetória</h2>
-        <div class="trajetoria">
-          <p>Desenvolvedor em formação pela USP, com base técnica em Desenvolvimento de Sistemas e experiência prática na criação de aplicações web, marketplaces e automação de tarefas.</p>
-          <p>Tenho experiência na construção de marketplaces, sistemas web e projetos de lógica aplicada, sempre buscando transformar necessidades reais em soluções funcionais, intuitivas e escaláveis.</p>
-        </div>
-      </section>
-
-      <section class="sec">
-        <h2 class="sec-title">Formação</h2>
-        <div class="entry">
-          <span class="period">2024 — 2028</span>
-          <div class="inst">Universidade de São Paulo (USP)</div>
-          <div class="desc">Bacharelado em Sistemas de Informação</div>
-        </div>
-        <div class="entry">
-          <span class="period">2022 — 2023</span>
-          <div class="inst">ETEC</div>
-          <div class="desc">Técnico em Desenvolvimento de Sistemas</div>
         </div>
       </section>
 
@@ -221,8 +186,48 @@
       </section>
 
       <section class="sec">
+        <h2 class="sec-title">Foco de atuação</h2>
+        <div class="interesses">
+          <span class="interesse">Desenvolvimento Front‑End</span>
+          <span class="interesse">Desenvolvimento Back‑End</span>
+          <span class="interesse">Aplicações Full‑stack</span>
+          <span class="interesse">Automação de Processos</span>
+          <span class="interesse">Inteligência Artificial Aplicada</span>
+        </div>
+      </section>
+    </aside>
+
+    <main class="main">
+      <section class="sec">
+        <h2 class="sec-title">Trajetória</h2>
+        <div class="trajetoria">
+          <p>Estudante de <strong>Sistemas de Informação na USP</strong>, com foco em <strong>desenvolvimento web</strong> e construção de <strong>aplicações completas (front + back)</strong>. Tenho experiência prática em:</p>
+          <ul>
+            <li><strong>APIs com Node.js</strong> – estruturação de rotas, integração e persistência de dados.</li>
+            <li><strong>Interfaces web com Bootstrap</strong> – usabilidade e entregas rápidas.</li>
+            <li><strong>Projetos complementares</strong> – Java (Spring Boot), React e automações em Python.</li>
+            <li><strong>Aplicações reais</strong> – CRUDs e sites funcionais, com fluxo completo: desenvolvimento, versionamento com Git e organização de código.</li>
+          </ul>
+          <p>Busco uma oportunidade de <strong>estágio</strong> onde possa evoluir rapidamente em ambiente de produção, contribuindo com entregas reais e aprendendo com desenvolvedores mais experientes. Tenho foco em <strong>boas práticas (clean code, Git)</strong> e estou constantemente aprofundando fundamentos de engenharia de software.</p>
+        </div>
+      </section>
+
+      <section class="sec">
+        <h2 class="sec-title">Formação</h2>
+        <div class="entry">
+          <span class="period">2024 — 2028</span>
+          <div class="inst">Universidade de São Paulo (USP)</div>
+          <div class="desc">Bacharelado em Sistemas de Informação</div>
+        </div>
+        <div class="entry">
+          <span class="period">2022 — 2023</span>
+          <div class="inst">ETEC</div>
+          <div class="desc">Técnico em Desenvolvimento de Sistemas</div>
+        </div>
+      </section>
+
+      <section class="sec">
         <h2 class="sec-title">Projetos em Destaque</h2>
-        
         <div class="projeto">
           <div class="projeto-titulo">🛒 Marketplace de Recicláveis</div>
           <ul class="projeto-desc">
@@ -230,31 +235,6 @@
             <li>Front-end com HTML, CSS, JavaScript e React; integração com APIs de localização e pagamento.</li>
             <li>Estruturação de catálogo, cadastro de usuários e fluxo de negociação.</li>
           </ul>
-        </div>
-
-        <div class="projeto">
-          <div class="projeto-titulo">🤖 Automações com IA</div>
-          <ul class="projeto-desc">
-            <li>Criação de prompts estruturados e fluxos de automação usando ChatGPT, Gemini e DeepSeek.</li>
-            <li>Uso de IA para geração de conteúdo, revisão de código e otimização de tarefas repetitivas.</li>
-          </ul>
-        </div>
-
-        <div class="projeto">
-          <div class="projeto-titulo">🧠 Sistemas e Lógica Aplicada</div>
-          <ul class="projeto-desc">
-            <li>Desenvolvimento de jogos e pequenos sistemas para praticar algoritmos e estrutura de dados.</li>
-            <li>Projetos acadêmicos com foco em resolução de problemas e pensamento computacional.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="sec">
-        <h2 class="sec-title">Portfólio & GitHub</h2>
-        <div class="trajetoria" style="font-size:13px;">
-          <p>Todo o código dos projetos mencionados (e outros experimentos) está disponível no meu GitHub: <br>
-          <strong><a href="https://github.com/Antonio-De-Oliveira11" target="_blank" style="color:var(--accent);">github.com/Antonio-De-Oliveira11</a></strong></p>
-          <p>Repositórios organizados por área: desenvolvimento web, automação, jogos e estudos de programação.</p>
         </div>
       </section>
     </main>
