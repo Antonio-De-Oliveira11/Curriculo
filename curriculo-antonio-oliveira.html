@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currículo — Antônio de Oliveira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1b1f24;
+    --muted:#5c6670;
+    --faint:#8a949e;
+    --accent:#0f766e;
+    --accent-dark:#0b544e;
+    --accent-tint:#e6f1ef;
+    --line:#e4e8e9;
+    --sidebar:#f5f8f7;
+    --page:#ffffff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{background:#d9dedd;font-family:'IBM Plex Sans',sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;}
+  body{display:flex;justify-content:center;padding:28px 16px;}
+
+  .page{
+    width:794px;min-height:1123px;background:var(--page);
+    display:grid;grid-template-rows:auto 1fr;
+    box-shadow:0 8px 40px rgba(20,30,30,.16);
+    overflow:hidden;
+  }
+
+  /* ---------- HEADER ---------- */
+  .header{padding:46px 54px 30px;border-bottom:1px solid var(--line);position:relative;}
+  .header::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--accent);}
+  .name{font-size:42px;font-weight:600;letter-spacing:-.5px;line-height:1.04;}
+  .name .last{color:var(--accent);}
+  .role{margin-top:8px;font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;
+    letter-spacing:3.5px;text-transform:uppercase;color:var(--muted);}
+  .contact{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px 26px;}
+  .contact a,.contact span{display:flex;align-items:center;gap:9px;font-size:12.5px;color:var(--muted);
+    text-decoration:none;font-family:'IBM Plex Mono',monospace;}
+  .contact svg{width:15px;height:15px;flex:none;color:var(--accent);}
+
+  /* ---------- BODY GRID ---------- */
+  .body{display:grid;grid-template-columns:300px 1fr;}
+  .sidebar{background:var(--sidebar);padding:36px 32px;border-right:1px solid var(--line);}
+  .main{padding:36px 40px 40px;}
+
+  .sec{margin-bottom:30px;}
+  .sec:last-child{margin-bottom:0;}
+  .sec-title{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:600;
+    letter-spacing:2.5px;text-transform:uppercase;color:var(--accent-dark);margin-bottom:16px;}
+  .sec-title::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  /* profile */
+  .profile{font-size:13.5px;line-height:1.72;color:#33393f;}
+
+  /* education / objective entries */
+  .entry{margin-bottom:18px;}
+  .entry:last-child{margin-bottom:0;}
+  .entry .period{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;
+    letter-spacing:1px;color:var(--accent);background:var(--accent-tint);
+    display:inline-block;padding:2px 8px;border-radius:3px;margin-bottom:7px;}
+  .entry .inst{font-size:14.5px;font-weight:600;line-height:1.3;}
+  .entry .desc{font-size:13px;color:var(--muted);margin-top:3px;line-height:1.5;}
+
+  .objective{font-size:13.5px;line-height:1.7;color:#33393f;
+    border-left:3px solid var(--accent);padding:4px 0 4px 16px;}
+  .tag{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-family:'IBM Plex Mono',monospace;
+    font-size:11px;font-weight:500;letter-spacing:.5px;color:var(--accent-dark);
+    background:var(--accent-tint);padding:5px 11px;border-radius:20px;}
+  .tag svg{width:13px;height:13px;}
+
+  /* tech chips */
+  .grp-label{font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;
+    color:var(--faint);margin:0 0 9px;}
+  .grp{margin-bottom:18px;}
+  .grp:last-child{margin-bottom:0;}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;}
+  .chip{font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:500;
+    padding:4px 10px;border-radius:5px;line-height:1.2;}
+  .chip.solid{background:var(--accent);color:#fff;}
+  .chip.outline{background:transparent;color:var(--accent-dark);border:1px solid #c4d6d2;}
+
+  /* skills list */
+  .skills{list-style:none;display:flex;flex-direction:column;gap:11px;}
+  .skills li{display:flex;align-items:flex-start;gap:10px;font-size:13px;line-height:1.4;color:#33393f;}
+  .skills svg{width:15px;height:15px;color:var(--accent);flex:none;margin-top:1px;}
+
+  /* languages */
+  .lang{margin-bottom:14px;}
+  .lang:last-child{margin-bottom:0;}
+  .lang-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;}
+  .lang-name{font-size:13.5px;font-weight:600;}
+  .lang-lvl{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--muted);letter-spacing:.5px;}
+  .dots{display:flex;gap:5px;}
+  .dot{width:8px;height:8px;border-radius:50%;background:#cdd9d6;}
+  .dot.on{background:var(--accent);}
+
+  @media print{
+    @page{size:A4;margin:0;}
+    html,body{background:#fff;padding:0;}
+    .page{box-shadow:none;width:210mm;min-height:297mm;}
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- HEADER -->
+    <header class="header">
+      <h1 class="name">Antônio <span class="last">de Oliveira</span></h1>
+      <div class="role">Software Engineer</div>
+      <div class="contact">
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +11914551119
+        </span>
+        <a href="mailto:antoniooliveira1101@outlook.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          antoniooliveira1101@outlook.com
+        </a>
+        <a href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          Antonio De Oliveira
+        </a>
+        <a href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+          Antonio-De-Oliveira11
+        </a>
+      </div>
+    </header>
+
+    <!-- BODY -->
+    <div class="body">
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+
+        <section class="sec">
+          <h2 class="sec-title">Tecnologias</h2>
+          <div class="grp">
+            <p class="grp-label">Intermediário</p>
+            <div class="chips">
+              <span class="chip solid">HTML</span>
+              <span class="chip solid">CSS</span>
+              <span class="chip solid">JavaScript</span>
+              <span class="chip solid">WordPress</span>
+              <span class="chip solid">IA Generativa</span>
+            </div>
+            <p style="font-size:10.5px;color:var(--faint);margin-top:7px;font-family:'IBM Plex Mono',monospace;">ChatGPT · DeepSeek · Gemini</p>
+          </div>
+          <div class="grp">
+            <p class="grp-label">Básico</p>
+            <div class="chips">
+              <span class="chip outline">Python</span>
+              <span class="chip outline">Java</span>
+              <span class="chip outline">React</span>
+              <span class="chip outline">Node.js</span>
+              <span class="chip outline">SQL</span>
+              <span class="chip outline">C</span>
+              <span class="chip outline">Git</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="sec">
+          <h2 class="sec-title">Habilidades</h2>
+          <ul class="skills">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Trabalho em equipe e comunicação</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Foco em qualidade</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Organização e metodologias</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Resolução de problemas</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Aprendizado contínuo</li>
+          </ul>
+        </section>
+
+        <section class="sec">
+          <h2 class="sec-title">Idiomas</h2>
+          <div class="lang">
+            <div class="lang-top"><span class="lang-name">Português</span><span class="lang-lvl">NATIVO</span></div>
+            <div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div>
+          </div>
+          <div class="lang">
+            <div class="lang-top"><span class="lang-name">Inglês</span><span class="lang-lvl">INTERMEDIÁRIO</span></div>
+            <div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div>
+          </div>
+        </section>
+
+      </aside>
+
+      <!-- MAIN -->
+      <main class="main">
+
+        <section class="sec">
+          <h2 class="sec-title">Perfil</h2>
+          <p class="profile">Estudante de Sistemas de Informação na USP, apaixonado por tecnologia, inovação e resolução de problemas. Tenho forte interesse em desenvolvimento de software e análise de dados, e estou constantemente explorando novas tecnologias e ferramentas para aprimorar minhas habilidades técnicas. Sou movido pelo desafio de resolver problemas complexos e pela oportunidade de criar soluções eficazes — sejam elas práticas ou sistêmicas.</p>
+        </section>
+
+        <section class="sec">
+          <h2 class="sec-title">Educação</h2>
+          <div class="entry">
+            <span class="period">2024 — 2028</span>
+            <div class="inst">Universidade de São Paulo (USP)</div>
+            <div class="desc">Bacharelado em Sistemas de Informação</div>
+          </div>
+          <div class="entry">
+            <span class="period">2022 — 2023</span>
+            <div class="inst">ETEC</div> 
+            <div class="desc">Técnico em Desenvolvimento de Sistemas</div>
+          </div>
+        </section>
+
+        <section class="sec">
+          <h2 class="sec-title">Objetivo Profissional</h2>
+          <p class="objective">Em busca da primeira oportunidade na área de tecnologia para desenvolver minhas habilidades na prática e contribuir com dedicação, responsabilidade e vontade de aprender.</p>
+          <span class="tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            Disponível para início imediato
+          </span>
+        </section>
+
+      </main>
+    </div>
+  </div>
+</body>
+</html>
