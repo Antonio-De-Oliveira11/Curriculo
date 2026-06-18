@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Currículo — Antônio de Oliveira | Desenvolvedor Full-stack & IA</title>
+<title>Currículo — Antônio de Oliveira | Desenvolvedor Full-stack</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -51,11 +51,9 @@
     letter-spacing:2.5px;text-transform:uppercase;color:var(--accent-dark);margin-bottom:16px;}
   .sec-title::after{content:"";flex:1;height:1px;background:var(--line);}
 
-  .trajetoria{font-size:14px;line-height:1.65;color:#1e2a2e;}
-  .trajetoria p{margin-bottom:12px;}
+  .trajetoria{font-size:14px;line-height:1.7;color:#1e2a2e;}
+  .trajetoria p{margin-bottom:0;}
   .trajetoria strong{color:var(--accent-dark);}
-  .trajetoria ul{margin:8px 0 12px 20px;}
-  .trajetoria li{margin-bottom:6px;}
 
   .entry{margin-bottom:18px;}
   .entry:last-child{margin-bottom:0;}
@@ -75,20 +73,12 @@
   .chip.solid{background:var(--accent);color:#fff;}
   .chip.outline{background:transparent;color:var(--accent-dark);border:1px solid #c4d6d2;}
 
-  .comp-item{margin-bottom:14px;}
-  .comp-title{font-weight:600;font-size:13px;display:flex;align-items:center;gap:8px;margin-bottom:4px;}
-  .comp-title svg{width:14px;height:14px;color:var(--accent);}
-
   .lang{margin-bottom:20px;}
   .lang:last-child{margin-bottom:0;}
   .lang-name{font-size:13.5px;font-weight:600;margin-bottom:6px;}
-  .lang-detail{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--accent-dark);background:var(--accent-tint);display:inline-block;padding:2px 8px;border-radius:3px;}
-
-  .projeto{margin-bottom:20px;}
-  .projeto-titulo{font-weight:700;font-size:14px;color:var(--accent-dark);margin-bottom:5px;}
-  .projeto-desc{font-size:13px;color:var(--muted);margin-left:12px;list-style:none;}
-  .projeto-desc li{margin-bottom:4px;display:flex;gap:8px;}
-  .projeto-desc li::before{content:"→";color:var(--accent);}
+  .dots{display:flex;gap:5px;margin-top:4px;}
+  .dot{width:8px;height:8px;border-radius:50%;background:#cdd9d6;}
+  .dot.on{background:var(--accent);}
 
   .interesses{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;}
   .interesse{background:var(--accent-tint);padding:5px 12px;border-radius:20px;font-size:12px;color:var(--accent-dark);font-weight:500;}
@@ -106,11 +96,15 @@
 
   <header class="header">
     <h1 class="name">Antônio <span class="last">de Oliveira</span></h1>
-    <div class="role">Desenvolvedor Full-stack & IA</div>
+    <div class="role">Desenvolvedor Full-stack</div>
     <div class="contact">
       <span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         +55 11 91455-1119
+      </span>
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        20 anos
       </span>
       <a href="mailto:antoniooliveira1101@outlook.com">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
@@ -133,7 +127,7 @@
       <section class="sec">
         <h2 class="sec-title">Tecnologias</h2>
         <div class="grp">
-          <p class="grp-label">Domínio prático</p>
+          <p class="grp-label">3 anos+ de experiência</p>
           <div class="chips">
             <span class="chip solid">HTML5</span>
             <span class="chip solid">CSS3</span>
@@ -146,16 +140,12 @@
           </div>
         </div>
         <div class="grp">
-          <p class="grp-label">Em evolução</p>
+          <p class="grp-label">1 ano+</p>
           <div class="chips">
             <span class="chip outline">Python</span>
             <span class="chip outline">Java (Spring Boot)</span>
             <span class="chip outline">SQL</span>
             <span class="chip outline">C</span>
-            <span class="chip outline">IA Generativa</span>
-          </div>
-          <div style="font-size:10.5px;color:var(--faint);margin-top:7px;font-family:'IBM Plex Mono',monospace;">
-            ChatGPT · DeepSeek · Gemini
           </div>
         </div>
       </section>
@@ -164,25 +154,21 @@
         <h2 class="sec-title">Idiomas</h2>
         <div class="lang">
           <div class="lang-name">Inglês</div>
-          <div class="lang-detail">Leitura Técnica e Documentação</div>
-          <div style="font-size:11px; color:var(--faint); margin-top:8px;">Compreensão de documentação oficial, artigos técnicos e comunicação básica.</div>
+          <div class="dots">
+            <span class="dot on"></span>
+            <span class="dot on"></span>
+            <span class="dot on"></span>
+            <span class="dot on"></span>
+            <span class="dot"></span>
+          </div>
         </div>
       </section>
 
       <section class="sec">
         <h2 class="sec-title">Competências Aplicadas</h2>
-        <div class="comp-item">
-          <div class="comp-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Desenvolvimento orientado à solução</div>
-        </div>
-        <div class="comp-item">
-          <div class="comp-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Aprendizado e adaptação tecnológica</div>
-        </div>
-        <div class="comp-item">
-          <div class="comp-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Automação e otimização de processos</div>
-        </div>
-        <div class="comp-item">
-          <div class="comp-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Visão de produto e negócio</div>
-        </div>
+        <p style="font-size:13px; line-height:1.6; color:#33393f;">
+          Dedicatória pessoal reconhecida pela escola de origem pelo ingresso na USP. Destaque como segundo colocado no curso técnico em Desenvolvimento de Sistemas, conciliando o técnico com o ensino médio. Tenacidade e comprometimento com a evolução contínua.
+        </p>
       </section>
 
       <section class="sec">
@@ -192,26 +178,11 @@
           <span class="interesse">Desenvolvimento Back‑End</span>
           <span class="interesse">Aplicações Full‑stack</span>
           <span class="interesse">Automação de Processos</span>
-          <span class="interesse">Inteligência Artificial Aplicada</span>
         </div>
       </section>
     </aside>
 
     <main class="main">
-      <section class="sec">
-        <h2 class="sec-title">Trajetória</h2>
-        <div class="trajetoria">
-          <p>Estudante de <strong>Sistemas de Informação na USP</strong>, com foco em <strong>desenvolvimento web</strong> e construção de <strong>aplicações completas (front + back)</strong>. Experiência prática em:</p>
-          <ul>
-            <li><strong>APIs com Node.js</strong> – estruturação de rotas, integração e persistência de dados.</li>
-            <li><strong>Interfaces web com Bootstrap</strong> – usabilidade e entregas rápidas.</li>
-            <li><strong>Projetos complementares</strong> – Java (Spring Boot), React e automações em Python.</li>
-            <li><strong>Aplicações reais</strong> – CRUDs e sites funcionais, com fluxo completo: desenvolvimento, versionamento com Git e organização de código.</li>
-          </ul>
-          <p>Foco em <strong>boas práticas (clean code, Git)</strong> e constante aprofundamento em engenharia de software.</p>
-        </div>
-      </section>
-
       <section class="sec">
         <h2 class="sec-title">Formação</h2>
         <div class="entry">
@@ -227,14 +198,9 @@
       </section>
 
       <section class="sec">
-        <h2 class="sec-title">Projetos em Destaque</h2>
-        <div class="projeto">
-          <div class="projeto-titulo">🛒 Marketplace de Recicláveis</div>
-          <ul class="projeto-desc">
-            <li>Plataforma para compra e venda de materiais recicláveis (projeto de conclusão de curso).</li>
-            <li>Front-end com HTML, CSS, JavaScript e React; integração com APIs de localização e pagamento.</li>
-            <li>Estruturação de catálogo, cadastro de usuários e fluxo de negociação.</li>
-          </ul>
+        <h2 class="sec-title">Trajetória</h2>
+        <div class="trajetoria">
+          <p>Estudante de <strong>Sistemas de Informação na USP</strong> e formado técnico em <strong>Desenvolvimento de Sistemas pela ETEC</strong>, construí um <strong>marketplace de compra e venda de materiais recicláveis</strong> como projeto de conclusão de curso — front-end com <strong>React</strong>, integração com APIs de localização e pagamento, e estrutura completa de catálogo e cadastro de usuários. Tenho experiência no desenvolvimento de <strong>APIs com Node.js</strong>, interfaces web com <strong>Bootstrap</strong> e projetos complementares em <strong>Java (Spring Boot), Python e automações</strong>. Atualmente, aprofundo fundamentos de engenharia de software e arquitetura de aplicações.</p>
         </div>
       </section>
     </main>
