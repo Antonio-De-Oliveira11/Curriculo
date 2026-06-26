@@ -52,8 +52,12 @@
   .sec-title::after{content:"";flex:1;height:1px;background:var(--line);}
 
   .trajetoria{font-size:14px;line-height:1.7;color:#1e2a2e;}
-  .trajetoria p{margin-bottom:0;}
+  .trajetoria p{margin-bottom:12px;}
   .trajetoria strong{color:var(--accent-dark);}
+
+  .conquista-list{list-style:none;padding:0;}
+  .conquista-list li{font-size:13px;line-height:1.5;margin-bottom:8px;display:flex;gap:10px;align-items:flex-start;color:#33393f;}
+  .conquista-list li::before{content:"✓";color:var(--accent);font-weight:600;font-size:14px;}
 
   .entry{margin-bottom:18px;}
   .entry:last-child{margin-bottom:0;}
@@ -165,10 +169,12 @@
       </section>
 
       <section class="sec">
-        <h2 class="sec-title">Competências Aplicadas</h2>
-        <p style="font-size:13px; line-height:1.6; color:#33393f;">
-          Dedicatória pessoal reconhecida pela escola de origem pelo ingresso na USP. Destaque como segundo colocado no curso técnico em Desenvolvimento de Sistemas, conciliando o técnico com o ensino médio. Tenacidade e comprometimento com a evolução contínua.
-        </p>
+        <h2 class="sec-title">Conquistas</h2>
+        <ul class="conquista-list">
+          <li>Ingresso na faculdade pública vindo de escola pública</li>
+          <li>Segundo lugar na turma do ensino técnico</li>
+          <li>Dedicatória da escola pelo ingresso na universidade</li>
+        </ul>
       </section>
 
       <section class="sec">
@@ -186,7 +192,7 @@
       <section class="sec">
         <h2 class="sec-title">Formação</h2>
         <div class="entry">
-          <span class="period">2024 — 2027</span>
+          <span class="period">2024 — 2028</span>
           <div class="inst">Universidade de São Paulo (USP)</div>
           <div class="desc">Bacharelado em Sistemas de Informação</div>
         </div>
@@ -200,7 +206,8 @@
       <section class="sec">
         <h2 class="sec-title">Trajetória</h2>
         <div class="trajetoria">
-          <p>Estudante de <strong>Sistemas de Informação na USP</strong> e formado técnico em <strong>Desenvolvimento de Sistemas pela ETEC</strong>, construí um <strong>marketplace de compra e venda de materiais recicláveis</strong> como projeto de conclusão de curso — back-end com <strong>Node.js</strong>, integração com APIs de localização e pagamento, e estrutura completa de catálogo e cadastro de usuários. Tenho experiência no desenvolvimento de <strong>APIs com Node.js</strong>, interfaces web com <strong>Bootstrap</strong> e projetos complementares em <strong>Java (Spring Boot), Python e automações</strong>. Atualmente, estou explorando <strong>React</strong> para front-end e aprofundando fundamentos de engenharia de software e arquitetura de aplicações.</p>
+          <p>Estudante de <strong>Sistemas de Informação na USP</strong> e formado técnico em <strong>Desenvolvimento de Sistemas pela ETEC</strong>, construí um <strong>marketplace de compra e venda de materiais recicláveis</strong> como projeto de conclusão de curso — back-end com <strong>Node.js</strong>, integração com APIs de localização e pagamento, e estrutura completa de catálogo e cadastro de usuários.</p>
+          <p>Experiência em <strong>APIs Node.js</strong>, interfaces web com <strong>Bootstrap</strong>, e projetos complementares em <strong>Java (Spring Boot), Python e automações</strong>. Atualmente, explorando <strong>React</strong> para front-end e aprofundando engenharia de software e arquitetura de aplicações.</p>
         </div>
       </section>
     </main>
